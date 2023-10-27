@@ -1,4 +1,4 @@
-import instance from "apis/instance"
+import instance from "./instance"
 
 export const getJobMenu = async () => {
   const { data } = await instance.get(`/cong-viec/lay-menu-loai-cong-viec`);
