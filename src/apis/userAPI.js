@@ -1,12 +1,12 @@
 import instance from "./instance"
 
 // Authentication
-export const postSignIn = async (values) => {
+export const postLogIn = async (values) => {
   const { data } = await instance.post("/auth/signin", values);
   return data;
 };
 
-export const postSignUp = async (values) => {
+export const postRegister = async (values) => {
   const { data } = await instance.post("/auth/signup", values);
   return data;
 };

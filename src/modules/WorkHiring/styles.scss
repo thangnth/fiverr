@@ -1,0 +1,104 @@
+#ServiceInfo {
+    .ant-rate {
+        font-size: 18px;
+        color: #02c2a9;
+    }
+
+    li {
+        list-style-type: disc;
+    }
+
+    a.nav-link {
+        padding: 8px 10px;
+    }
+
+    #ServiceCost {
+        .nav.nav-tabs {
+            max-width: 402px;
+            border: 1px solid #dadbdd;
+            box-shadow: 0 2px 15px -3px rgba(0, 0, 0, 0.07), 0 10px 20px -2px rgba(0, 0, 0, 0.04);
+
+            .nav-item a {
+                text-align: center;
+                background-color: #fafafa;
+                border-right: 1px solid #dadbdd;
+                background-color: #fafafa;
+                font-size: 15px !important;
+                padding: 25px 35px;
+            }
+
+            .nav-link.active {
+                background-color: #fff;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #ServiceInfo {
+        #ServiceCost {
+            .nav.nav-tabs {
+                max-width: 343px;
+
+                .nav-item a {
+                    padding: 25px !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #ServiceInfo {
+        #ServiceCost {
+
+            .nav-item {
+                width: 33.333%;
+            }
+
+            .nav.nav-tabs {
+                max-width: 800px !important;
+
+                .nav-item a {
+                    padding: auto !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #ServiceInfo {
+        a.nav-link {
+            padding: 6px 8px;
+        }
+
+        #ServiceCost {
+            font-size: 14px;
+
+            .nav.nav-tabs {
+                .nav-item a {
+                    font-size: 14px !important;
+                    padding: 15px !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #ServiceInfo {
+        a.nav-link {
+            padding: 4px 8px;
+        }
+
+        #ServiceCost {
+            .nav.nav-tabs {
+                .nav-item a {
+                    font-size: 13px !important;
+                    padding: 10px !important;
+                }
+            }
+        }
+    }
+}

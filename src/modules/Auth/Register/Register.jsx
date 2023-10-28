@@ -7,15 +7,15 @@ import {
   MDBCardImage,
   MDBInput,
 } from "mdb-react-ui-kit";
-import styles from "./Register.module.scss";
+import styles from "./styles.module.scss";
 import { Navigate, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { apiRegister } from "../../../apis/userAPI";
+import { postRegister } from "apis/userAPI";
 import dayjs from "dayjs";
 import { useSelector } from "react-redux";
-import { alertError, alertSuccess } from "../../../helpers/sweeAlert2";
+import { alertError, alertSuccess } from "helpers/sweetAlert2";
 
 const PASSWORD_FORMAT = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
 const NAME_FORMAT = /^[\p{L}\s]{2,}$/u;
@@ -75,9 +75,9 @@ function Register() {
     resolver: yupResolver(schema),
   });
 
-  const registerUserInfo = async (values) => {
+  const handleRegister = async (values) => {
     try {
-      const data = await apiRegister(values);
+      const data = await postRegister(values);
       console.log(data);
       if (data) {
         alertSuccess("Member registered successfully!");
@@ -94,7 +94,7 @@ function Register() {
     if (values.certification)
       values.certification = values.certification.split(", ");
     console.log(values);
-    registerUserInfo(values);
+    handleRegister(values);
     reset();
     navigate("/login");
   };

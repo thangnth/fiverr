@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react";
-import MainHeader from "./MainHeader/MainHeader";
-import SubHeader from "./SubHeader/SubHeader";
-import "./HeaderCustom.scss";
+import MainHeader from "./MainHeader";
+import SubHeader from "./SubHeader";
+import "./styles.module.scss"
 import { useLocation } from "react-router-dom";
-import useWindowResize from "../../helpers/useWindowResize";
-import { apiJobCategory } from "../../apis/jobAPI";
-import { alertError } from "../../helpers/sweeAlert2";
+import useWindowResize  from "hooks/useWindowResize";
+import { alertError } from "helpers/sweetAlert2";
+import { getJobCategogy } from "apis/jobAPI";
 
 function Header() {
   const [y, setY] = useState(0);
-  const [jobCategory, setJobCategory] = useState();
+  const [jobCAT, setJobCAT] = useState();
 
   const size = useWindowResize();
   const location = useLocation();
@@ -22,17 +22,17 @@ function Header() {
     setY(scrollY);
   };
 
-  const getJobCategory = async () => {
+  const handleJobCAT = async () => {
     try {
-      const data = await apiJobCategory();
-      setJobCategory(data?.content);
+      const data = await getJobCategogy();
+      setJobCAT(data?.content);
     } catch (error) {
       alertError(error.response.data.content);
     }
   };
 
   useEffect(() => {
-    getJobCategory();
+    handleJobCAT();
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -41,7 +41,7 @@ function Header() {
 
   return (
     <>
-      <MainHeader jobCategory={jobCategory} />
+      <MainHeader jobCategory={jobCAT} />
       {condition && <SubHeader jobCategory={jobCategory} />}
     </>
   );

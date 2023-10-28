@@ -1,14 +1,14 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import {postSignIn} from "apis/userAPI"
+import {postLogIn} from "apis/userAPI"
 import { alertError, alertSuccess } from "helpers/sweetAlert2";
 
 // async actions
-export const signIn = createAsyncThunk(
-  "user/signIn",
+export const logIn = createAsyncThunk(
+  "user/logIn",
   async (values, { getState }) => {
     try {
-      const data = await postSignIn(values);
-      if (data) alertSuccess("Signed In successfully!");
+      const data = await postLogIn(values);
+      if (data) alertSuccess("Logged In successfully!");
       sessionStorage.setItem("user", JSON.stringify(data.content));
       const { rememberMe } = getState().user;
       if (rememberMe) {
@@ -16,7 +16,7 @@ export const signIn = createAsyncThunk(
       }
       return data.content;
     } catch (error) {
-      alertError("Failed to sign in!");
+      alertError("Failed to login!");
       throw error;
     }
   }
@@ -45,18 +45,18 @@ const userSlice = createSlice({
     },
   },
   extraReducers: (builder) => {
-    builder.addCase(signIn.pending, (state) => {
+    builder.addCase(logIn.pending, (state) => {
       return { ...state, isLoading: true };
     });
-    builder.addCase(signIn.fulfilled, (state, action) => {
+    builder.addCase(logIn.fulfilled, (state, action) => {
       return { ...state, isLoading: false, user: action.payload };
     });
-    builder.addCase(signIn.rejected, (state, action) => {
+    builder.addCase(logIn.rejected, (state, action) => {
       return { ...state, isLoading: false, error: action.error.message };
     });
   },
 });
 
-export const { signOut, setRememberMe } = userSlice.actions;
+export const { logOut, setRememberMe } = userSlice.actions;
 
 export default userSlice.reducer;

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Collapse } from "react-bootstrap";
-import styles from "./Footer.module.scss";
-import useWindowResize from "../../helpers/useWindowResize";
+import styles from "./Footer.module.scss"
+import useWindowResize from "../../hooks/useWindowResize";
 
 function Footer() {
   const [expandedSections, setExpandedSections] = useState([]);

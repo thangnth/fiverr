@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
-import styles from "./JobList.module.scss";
 import { useNavigate, useParams } from "react-router-dom";
 import { Card } from "react-bootstrap";
 import Pagination from "react-paginate";
-import { apiJobList } from "../../apis/jobAPI";
-import "./Pagination.scss";
+import {getPagination} from "apis/jobAPI";
+import "./styles.scss";
+import styles from "./styles.module.scss";
 import MainNav from "./MainNav/MainNav";
 import SwitchNav from "./SwitchNav/SwitchNav";
-import { alertError } from "../../helpers/sweeAlert2";
+import { alertError } from "helpers/sweetAlert2"
 
 function JobList() {
   const { keyword } = useParams();
@@ -24,7 +24,7 @@ function JobList() {
 
   const handleSearch = async (keyword) => {
     try {
-      const data = await apiJobList(currentPage, keyword);
+      const data = await getPagination(currentPage, keyword);
       setJobs(data.data);
     } catch (error) {
       alertError(error.response.data.content);

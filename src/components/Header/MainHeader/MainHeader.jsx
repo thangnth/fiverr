@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import styles from "./MainHeader.module.scss";
-import "../HeaderCustom.scss";
+import styles from  "./styles.module.scss"
+import "../styles.module.scss"
 import { useLocation, useNavigate } from "react-router-dom";
 import {
   Container,
@@ -10,16 +10,16 @@ import {
   Navbar,
   Offcanvas,
 } from "react-bootstrap";
-import useWindowResize from "../../../helpers/useWindowResize";
+import useWindowResize from "hooks/useWindowResize";
 import { useDispatch, useSelector } from "react-redux";
 import {
   alertError,
   alertSuccess,
   warningLogout,
-} from "../../../helpers/sweeAlert2";
-import { logout } from "../../../slices/userSlice";
+} from "helpers/sweetAlert2";
+import {logOut} from "slices/userSlice"
 
-function MainHeader({ jobCategory }) {
+function MainHeader({ jobCAT }) {
   const { user } = useSelector((state) => state?.user);
 
   const [values, setValues] = useState(null);
@@ -40,9 +40,9 @@ function MainHeader({ jobCategory }) {
     warningLogout()
       .then((result) => {
         if (result.isConfirmed) {
-          dispatch(logout());
-          localStorage.removeItem("userInfo");
-          sessionStorage.removeItem("userInfo");
+          dispatch(logOut());
+          localStorage.removeItem("user");
+          sessionStorage.removeItem("user");
           alertSuccess("Logged out successfully");
         }
       })
@@ -89,7 +89,7 @@ function MainHeader({ jobCategory }) {
 
   return (
     <div
-      id="MainHeader"
+      id="mainHeader"
       style={
         condition
           ? {
@@ -153,17 +153,17 @@ function MainHeader({ jobCategory }) {
                     title="Browse Categories"
                     id={`offcanvasNavbarDropdown-expand-lg`}
                   >
-                    {jobCategory?.map((category) => {
+                    {jobCAT?.map((CAT) => {
                       return (
                         <NavDropdown.Item
-                          key={category.id}
+                          key={CAT.id}
                           onClick={() =>
                             navigate(
-                              `/${category.tenLoaiCongViec}/${category.id}`
+                              `/${CAT.tenLoaiCongViec}/${CAT.id}`
                             )
                           }
                         >
-                          {category?.tenLoaiCongViec}
+                          {CAT?.tenLoaiCongViec}
                         </NavDropdown.Item>
                       );
                     })}

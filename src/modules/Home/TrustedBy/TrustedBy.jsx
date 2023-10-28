@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./TrustedBy.module.scss";
-import useWindowResize from "../../../helpers/useWindowResize";
+import useWindowResize from "../../../hooks/useWindowResize";
 function TrustedBy() {
   const size = useWindowResize();
   return (

@@ -1,0 +1,160 @@
+.jobCharge {
+    width: 40% !important;
+    position: fixed;
+    top: 150px;
+    right: -100px;
+    margin-bottom: 30px;
+
+    .packageContent {
+        width: 100%;
+        padding: 15px 25px;
+
+        .standard {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+        .addtionalInfo {
+            margin: 30px 0 10px 0;
+            display: flex !important;
+            justify-content: space-between;
+            align-items: center;
+
+            svg {
+                margin-right: 5px;
+            }
+        }
+
+        ul {
+            li {
+                margin: 10px 0;
+
+                i {
+                    color: #02c2a9;
+                }
+
+                span {
+                    margin-left: 10px;
+                }
+
+                .noCheck {
+                    margin-left: 25px;
+
+                }
+            }
+        }
+
+        p.description {
+            margin-top: 20px !important;
+        }
+
+        .continue {
+            display: flex;
+            flex-direction: column;
+            justify-content: center !important;
+
+            button {
+                font-size: 16px;
+
+                margin: 10px 30px;
+            }
+
+            a {
+                display: flex !important;
+                justify-content: center !important;
+            }
+        }
+
+
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .serviceCost {
+        right: -50px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .serviceCost {
+        width: 100% !important;
+        position: unset;
+
+        .packageContent {
+            .continue {
+                button {
+                    font-size: 16px;
+                    margin: 10px 80px;
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .serviceCost {
+        width: 100% !important;
+        position: unset;
+
+        .packageContent {
+            .standard {
+                margin-bottom: 25px;
+            }
+
+            .addtionalInfo {
+                margin: 25px 0 10px 0;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .serviceCost {
+        width: 100% !important;
+        position: unset;
+
+        .packageContent {
+            .standard {
+                margin-bottom: 20px;
+            }
+
+            .addtionalInfo {
+                margin: 20px 0 10px 0;
+            }
+
+            .continue {
+                button {
+                    font-size: 15px;
+                    margin: 10px 40px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .serviceCost {
+        width: 100% !important;
+        padding: 15px 20px;
+
+        .packageContent {
+            .standard {
+                margin-bottom: 20px;
+            }
+
+            .addtionalInfo {
+                margin: 20px 0 10px 0;
+            }
+
+            .continue {
+                button {
+                    font-size: 14px;
+                    margin: 10px 20px;
+                }
+            }
+        }
+    }
+}

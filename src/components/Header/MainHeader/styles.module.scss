@@ -1,0 +1,426 @@
+.header {
+    transition: all 0.5s ease-in-out;
+    height: 80px;
+    display: inline;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    color: white !important;
+  
+    .headerContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80px;
+  
+      .sideBar {
+        > joinFiverr {
+          color: red !important;
+          background-color: #1dbf73 !important;
+          border-radius: 4px;
+          text-decoration: none;
+          font-size: 14px;
+          display: inline;
+        }
+      }
+  
+      .account {
+        width: 35px;
+        height: 35px;
+        position: relative;
+  
+        a {
+          display: block !important;
+        }
+  
+        button {
+          border-radius: 100%;
+          width: 100%;
+          height: 100%;
+          padding: 0px !important;
+  
+          img {
+            border-radius: 100%;
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+  
+      .nav {
+        .joinButton {
+          border: 1px solid #1dbf73 !important;
+          color: #1dbf73;
+          border-radius: 4px;
+          text-decoration: none;
+          font-size: 14px;
+          display: inline;
+  
+          &:hover {
+            background-color: #1dbf73;
+            color: #fff !important;
+          }
+        }
+  
+        a {
+          padding: 6px 12px !important;
+          font-weight: 600 !important;
+          text-decoration: none;
+          white-space: nowrap;
+  
+          svg {
+            margin-right: 8px;
+          }
+        }
+  
+        a:hover,
+        a:hover svg {
+          color: #1dbf73 !important;
+          fill: #1dbf73 !important;
+        }
+  
+        .FiverrBusiness {
+          color: #1e1692 !important;
+        }
+      }
+  
+      .nav1 {
+        .joinButton {
+          border: 1px solid #fff !important;
+          color: #fff;
+          border-radius: 4px;
+          text-decoration: none;
+          font-size: 14px;
+          padding: 5px 16px;
+          display: inline;
+  
+          &:hover {
+            background-color: #1dbf73;
+            border: 1px solid #1dbf73 !important;
+          }
+        }
+  
+        a {
+          color: #fff !important;
+          padding: 6px 12px !important;
+          font-weight: 600 !important;
+          text-decoration: none;
+          white-space: nowrap;
+  
+          svg {
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  
+    .searchPackage {
+      width: 38vw !important;
+  
+      input {
+        height: 42px;
+      }
+  
+      .submitButton {
+        background-color: #222325;
+        border-radius: 0 4px 4px 0;
+  
+        width: 50px;
+        height: 42px;
+  
+        display: block;
+        font-size: 14px;
+        padding: 8px 16px;
+        text-shadow: none;
+        cursor: pointer;
+        transition: opacity 0.5s;
+  
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .headerContainer {
+      max-width: 900px !important;
+      margin: 0px 40px;
+      height: 80px;
+  
+      #navbar.container {
+        max-width: 1500px !important;
+      }
+  
+      .nav {
+        // overflow: hidden;
+  
+        .joinButton {
+          border: 1px solid #1dbf73 !important;
+          color: #1dbf73;
+          border-radius: 4px;
+          text-decoration: none;
+          font-size: 14px;
+          display: inline;
+  
+          &:hover {
+            background-color: #1dbf73;
+            color: #fff !important;
+          }
+        }
+  
+        a {
+          display: none;
+  
+          svg {
+            margin-right: 8px;
+          }
+        }
+  
+        .signIn {
+          display: inline;
+  
+          .signIn:hover {
+            color: #1dbf73 !important;
+            fill: #1dbf73 !important;
+          }
+        }
+  
+        .FiverrBusiness {
+          color: #1e1692 !important;
+        }
+      }
+  
+      .nav1 {
+        overflow: hidden;
+  
+        .joinButton {
+          border: 1px solid #fff !important;
+          color: #fff;
+          border-radius: 4px;
+          text-decoration: none;
+          font-size: 14px;
+          padding: 5px 16px;
+          display: inline;
+  
+          &:hover {
+            background-color: #1dbf73;
+            border: 1px solid #1dbf73 !important;
+          }
+        }
+  
+        a {
+          display: none;
+  
+          svg {
+            margin-right: 8px;
+          }
+        }
+  
+        .signIn {
+          display: inline;
+  
+          .signIn:hover {
+            color: #1dbf73 !important;
+            fill: #1dbf73 !important;
+          }
+        }
+      }
+    }
+  
+    .searchPackage {
+      input {
+        border-radius: 4px !important;
+        height: 42px;
+      }
+  
+      .submitButton {
+        display: none !important;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .headerContainer {
+      max-width: 800px !important;
+      margin: 0px 20px;
+      font-size: 15px;
+  
+      .nav {
+        .signIn {
+          display: inline;
+  
+          .signIn:hover {
+            color: #1dbf73 !important;
+            fill: #1dbf73 !important;
+          }
+        }
+  
+        a {
+          padding: 6px 10px !important;
+          font-weight: 550 !important;
+          display: none;
+  
+          svg {
+            margin-right: 8px;
+          }
+        }
+  
+        .joinButton {
+          display: none !important;
+        }
+      }
+  
+      .nav1 {
+        overflow: hidden;
+  
+        .signIn {
+          display: inline;
+  
+          .signIn:hover {
+            color: #1dbf73 !important;
+            fill: #1dbf73 !important;
+          }
+        }
+  
+        a {
+          display: none;
+          padding: 6px 10px !important;
+          font-weight: 550 !important;
+  
+          svg {
+            margin-right: 5px;
+          }
+        }
+  
+        .joinButton {
+          display: none !important;
+        }
+      }
+    }
+  
+    .searchPackage {
+      max-width: 200px !important;
+  
+      input {
+        border-radius: 4px !important;
+        height: 42px;
+      }
+  
+      .submitButton {
+        display: none !important;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 575.98px) {
+    .header {
+      min-height: 120px;
+    }
+  
+    .header1 {
+      min-height: 80px;
+  
+      .account {
+        width: 35px;
+        height: 35px;
+        position: relative;
+  
+        a {
+          display: block !important;
+        }
+  
+        button {
+          border-radius: 100%;
+          width: 100%;
+          height: 100%;
+          padding: 0px !important;
+  
+          img {
+            border-radius: 100%;
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+  
+      .headerContainer {
+        max-width: 800px !important;
+        margin: 0px 20px;
+        font-size: 15px;
+  
+        .nav {
+          .signIn {
+            display: inline;
+  
+            .signIn:hover {
+              color: #1dbf73 !important;
+              fill: #1dbf73 !important;
+            }
+          }
+  
+          a {
+            padding: 6px 10px !important;
+            font-weight: 550 !important;
+            display: none;
+  
+            svg {
+              margin-right: 8px;
+            }
+          }
+  
+          .joinButton {
+            display: none !important;
+          }
+        }
+  
+        .nav1 {
+          // overflow: hidden;
+  
+          .signIn {
+            display: none;
+  
+            .signIn:hover {
+              color: #1dbf73 !important;
+              fill: #1dbf73 !important;
+            }
+          }
+  
+          a {
+            display: none;
+            padding: 6px 10px !important;
+            font-weight: 550 !important;
+  
+            svg {
+              margin-right: 5px;
+            }
+          }
+  
+          .joinButton {
+            display: none !important;
+          }
+        }
+      }
+    }
+  
+    .headerContainer {
+      .searchPackage {
+        width: 200vw !important;
+  
+        form {
+          input {
+            margin-top: 10px !important;
+            border-radius: 4px !important;
+            height: 42px;
+          }
+  
+          .submitButton {
+            display: none !important;
+          }
+        }
+      }
+    }
+  }
+  

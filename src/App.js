@@ -1,10 +1,9 @@
 import { Suspense, lazy } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-
-import HomeLayout from "./layouts/HomeLayout/HomeLayout";
+import HomeLayout from "./layouts/HomeLayout/HomeLayout"
 import AuthLayout from "./layouts/AuthLayout/AuthLayout";
 import UserProfileLayout from "./layouts/UserProfileLayout/UserProfileLayout";
-import ServiceInfo from "./modules/ServiceInfo/ServiceInfo";
+import WorkHiring from "modules/WorkHiring";
 
 import Loading from "./components/Loading/Loading";
 import PageNotFound from "./components/PageNotFound/PageNotFound";
@@ -32,7 +31,7 @@ function App() {
             />
             <Route
               path="/jobList/:keyword/:MaCongViec"
-              element={<ServiceInfo />}
+              element={<WorkHiring />}
             />
           </Route>
 

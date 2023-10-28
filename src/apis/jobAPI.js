@@ -1,6 +1,6 @@
 import instance from "./instance"
 
-export const getJobMenu = async () => {
+export const getJobCategogy= async () => {
   const { data } = await instance.get(`/cong-viec/lay-menu-loai-cong-viec`);
   return data;
 };
@@ -16,7 +16,7 @@ export const getPagination= async (currentPage, keyword) => {
   return data?.content;
 };
 
-export const getJobByType = async (MaLoaiCongViec) => {
+export const getCATDetail = async (MaLoaiCongViec) => {
   const { data } = await instance.get(
     `/cong-viec/lay-chi-tiet-loai-cong-viec/${MaLoaiCongViec}`
   );

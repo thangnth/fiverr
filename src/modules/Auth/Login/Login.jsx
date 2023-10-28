@@ -8,12 +8,12 @@ import {
   MDBInput,
   MDBCheckbox,
 } from "mdb-react-ui-kit";
-import styles from "./Login.module.scss";
+import styles from "./styles.module.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { login, setRememberMe } from "../../../slices/userSlice";
+import { logIn, setRememberMe } from "../../../slices/userSlice";
 import { Navigate, useNavigate } from "react-router-dom";
 
 const PASSWORD_FORMAT = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
@@ -57,7 +57,7 @@ function Login() {
   };
 
   const onSubmit = (values) => {
-    dispatch(login(values));
+    dispatch(logIn(values));
     reset();
   };
 
