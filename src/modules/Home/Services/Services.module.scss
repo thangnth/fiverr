@@ -1,0 +1,133 @@
+.background {
+  height: 450px;
+  color: #404145;
+  margin-top: 90px;
+
+  .container {
+    padding: 0 32px;
+    margin: 0 20px;
+    height: 95px;
+
+    h2 {
+      padding-bottom: 16px;
+      font-weight: 700;
+    }
+
+    .services {
+      padding: 0 18px;
+      position: relative;
+
+      img {
+        width: 16.5vw;
+        height: 345px;
+        border-radius: 4px;
+        transition: all 1s;
+
+        &:hover {
+          opacity: 0.85;
+          cursor: pointer;
+        }
+      }
+
+      a {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        color: black;
+        text-decoration: none;
+        z-index: 10;
+
+        h4 {
+          padding: 16px 0 0 32px;
+          color: #fff;
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 130%;
+          display: block;
+          font-weight: 700;
+
+          small {
+            height: 20px;
+
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .background {
+    margin-top: 80px;
+
+    .services {
+      padding: 0 18px;
+      position: relative;
+
+      img {
+        width: 20vw !important;
+        height: 345px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .background {
+    margin-top: 80px;
+
+    .services {
+      padding: 0 18px;
+      position: relative;
+
+      img {
+        width: 27vw !important;
+        height: 345px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .background {
+    margin-top: 65px;
+
+    .services {
+      padding: 0 18px;
+      position: relative;
+
+      img {
+        width: 40vw !important;
+        height: 345px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .background {
+    margin-top: 50px;
+
+    .services {
+      padding: 0 18px;
+      position: relative;
+
+      img {
+        width: 75vw !important;
+        height: 345px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .background {
+    margin-top: 40px;
+  }
+}

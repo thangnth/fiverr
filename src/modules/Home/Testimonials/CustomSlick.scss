@@ -1,0 +1,56 @@
+@import "../../../styles/breakpoints";
+@import "../../../styles/responsive";
+
+#Testimonials {
+  .slick-arrow {
+    background-color: #fff !important;
+    border: 0;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+    width: 48px !important;
+    height: 48px !important;
+    line-height: 100% !important;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    z-index: 4;
+    border-radius: 30px;
+
+    &::before {
+      content: none !important;
+    }
+
+    &::after {
+      background: url("../../../../public/img/arrows.c651879.svg") no-repeat;
+      background-size: 16px 64px;
+      content: "";
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      margin-top: 3px;
+    }
+
+    @include responsive("medium") {
+      top: 31% !important;
+    }
+
+    @include responsive("smallest") {
+      top: 17% !important;
+    }
+  }
+
+  .slick-prev {
+    left: -25px !important;
+
+    &::after {
+      background-position: 0 -32px;
+    }
+  }
+
+  .slick-next {
+    right: -25px !important;
+
+    &::after {
+      background-position: 0 -48px;
+    }
+  }
+}

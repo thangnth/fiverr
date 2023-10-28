@@ -1,0 +1,111 @@
+.background {
+  height: 450px;
+  color: #404145;
+  margin-top: 90px;
+}
+.background .container {
+  padding: 0 32px;
+  margin: 0 20px;
+  height: 95px;
+}
+.background .container h2 {
+  padding-bottom: 16px;
+  font-weight: 700;
+}
+.background .container .services {
+  padding: 0 18px;
+  position: relative;
+}
+.background .container .services img {
+  width: 16.5vw;
+  height: 345px;
+  border-radius: 4px;
+  transition: all 1s;
+}
+.background .container .services img:hover {
+  opacity: 0.85;
+  cursor: pointer;
+}
+.background .container .services a {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: black;
+  text-decoration: none;
+  z-index: 10;
+}
+.background .container .services a h4 {
+  padding: 16px 0 0 32px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 130%;
+  display: block;
+  font-weight: 700;
+}
+.background .container .services a h4 small {
+  height: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .background {
+    margin-top: 80px;
+  }
+  .background .services {
+    padding: 0 18px;
+    position: relative;
+  }
+  .background .services img {
+    width: 20vw !important;
+    height: 345px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .background {
+    margin-top: 80px;
+  }
+  .background .services {
+    padding: 0 18px;
+    position: relative;
+  }
+  .background .services img {
+    width: 27vw !important;
+    height: 345px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .background {
+    margin-top: 65px;
+  }
+  .background .services {
+    padding: 0 18px;
+    position: relative;
+  }
+  .background .services img {
+    width: 40vw !important;
+    height: 345px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .background {
+    margin-top: 50px;
+  }
+  .background .services {
+    padding: 0 18px;
+    position: relative;
+  }
+  .background .services img {
+    width: 75vw !important;
+    height: 345px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .background {
+    margin-top: 40px;
+  }
+}/*# sourceMappingURL=Services.module.css.map */

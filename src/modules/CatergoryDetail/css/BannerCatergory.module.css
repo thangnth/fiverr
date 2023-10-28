@@ -1,0 +1,142 @@
+.container {
+  margin: 125px 20px 20px 20px;
+  padding: 32px;
+  font-size: 16px;
+}
+.container .banner .bannerBackground {
+  position: relative;
+}
+.container .banner .bannerBackground img {
+  width: 100%;
+  height: 100%;
+}
+.container .banner .bannerBackground .bannerContent {
+  width: 400px;
+  height: 250px;
+  padding: 50px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 550;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+}
+.container .banner .bannerBackground .bannerContent h1 {
+  font-size: 30px;
+  display: block;
+}
+.container .banner .bannerBackground .bannerContent p {
+  display: block;
+}
+.container .banner .bannerBackground .bannerContent button {
+  margin-top: 10px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 10px 16px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  color: white;
+}
+.container .banner .bannerBackground .bannerContent button span {
+  height: 18px;
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    margin: 75px 20px 20px 20px;
+    padding: 25px;
+  }
+  .container .banner .bannerBackground img {
+    min-height: 200px;
+  }
+  .container .banner .bannerBackground .bannerContent {
+    width: 350px;
+    min-height: 200px;
+    padding: 40px;
+  }
+  .container .banner .bannerBackground .bannerContent h1 {
+    font-size: 25px;
+    display: block;
+  }
+  .container .banner .bannerBackground .bannerContent button {
+    padding: 8px 14px;
+  }
+  .container .banner .bannerBackground .bannerContent button span {
+    height: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container .banner .bannerBackground .bannerContent {
+    width: 300px;
+    min-height: 160px;
+    padding: 25px;
+  }
+  .container .banner .bannerBackground .bannerContent h1 {
+    font-size: 22px;
+  }
+  .container .banner .bannerBackground .bannerContent button {
+    padding: 6px 12px;
+  }
+  .container .banner .bannerBackground .bannerContent button span {
+    height: 16px;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .container {
+    margin: 120px 20px 20px 20px;
+    padding: 20px;
+    font-size: 15px;
+  }
+  .container .banner .bannerBackground img {
+    min-height: 140px;
+  }
+  .container .banner .bannerBackground .bannerContent {
+    width: 280px;
+    min-height: 160px;
+    padding: 15px;
+  }
+  .container .banner .bannerBackground .bannerContent p {
+    font-size: 15px;
+  }
+  .container .banner .bannerBackground .bannerContent h1 {
+    font-size: 18px;
+  }
+  .container .banner .bannerBackground .bannerContent button {
+    padding: 5px 10px;
+  }
+  .container .banner .bannerBackground .bannerContent button span {
+    height: 15px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .container {
+    margin: 125px 15px 15px 15px;
+    padding: 15px;
+    font-size: 10px;
+    color: #222325;
+  }
+  .container .banner .bannerBackground img {
+    min-height: 160px;
+  }
+  .container .banner .bannerBackground .bannerContent {
+    width: 220px;
+    padding: 12px;
+  }
+  .container .banner .bannerBackground .bannerContent p {
+    font-size: 13px;
+  }
+  .container .banner .bannerBackground .bannerContent h1 {
+    font-size: 16px;
+  }
+  .container .banner .bannerBackground .bannerContent button span {
+    height: 15px;
+  }
+}/*# sourceMappingURL=BannerCatergory.module.css.map */

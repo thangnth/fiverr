@@ -1,0 +1,116 @@
+@import "../../../styles/breakpoints";
+@import "../../../styles/responsive";
+
+$playBtnSize: 100px;
+
+.spSection {
+  background-color: #f1fdf7;
+  margin-bottom: 96px;
+
+  @include responsive("small") {
+    margin-bottom: 80px;
+  }
+
+  @include responsive("smaller") {
+    margin: 0 auto 24px;
+  }
+
+  .spWrapper {
+    padding: 96px 0;
+
+    @include responsive("medium") {
+      padding: 48px 0;
+    }
+
+    @include responsive("small") {
+      padding: 24px 24px 48px;
+    }
+
+    .spLeft {
+      padding-right: 11%;
+
+      @include responsive("large") {
+        padding-bottom: 0;
+        padding-right: 7%;
+      }
+
+      @include responsive("medium") {
+        padding-bottom: 48px;
+      }
+
+      .h2Title {
+        margin: 0;
+        padding-bottom: 24px;
+        font-size: 32px;
+        line-height: 120%;
+
+        @include responsive("middle-medium") {
+          padding-bottom: 20px;
+        }
+
+        @include responsive("smaller") {
+          font-size: 28px;
+          line-height: 130%;
+        }
+      }
+
+      li {
+        padding-bottom: 24px;
+
+        &:last-of-type {
+          padding-bottom: 0;
+        }
+
+        h6 {
+          display: flex;
+          align-items: flex-start;
+          padding-bottom: 8px;
+          font-size: 18px;
+          line-height: 140%;
+          margin: 0;
+
+          span {
+            display: inline-block;
+            background: none;
+            border: none;
+            padding: 0;
+            margin-right: 10px;
+            color: #7a7d85;
+          }
+        }
+
+        p {
+          font-size: 18px;
+          line-height: 26px;
+        }
+      }
+    }
+
+    .spRight {
+      padding: 0 8px;
+
+      .imgWrapper {
+        cursor: pointer;
+        position: relative;
+
+        img {
+          width: 100%;
+        }
+
+        &::after {
+          background: url("../../../../public/img/play-button.png") no-repeat;
+          background-size: $playBtnSize;
+          content: "";
+          position: absolute;
+          display: inline-block;
+          width: $playBtnSize;
+          height: $playBtnSize;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 0;
+        }
+      }
+    }
+  }
+}

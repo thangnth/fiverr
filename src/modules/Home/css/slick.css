@@ -1,0 +1,206 @@
+#Banner .slick-arrow.slick-prev,
+#Banner .slick-arrow.slick-next,
+#Services .slick-arrow.slick-prev,
+#Services .slick-arrow.slick-next {
+  background-color: #fff;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+  height: 48px;
+  line-height: 100%;
+  padding-bottom: 30px !important;
+  position: absolute;
+  text-align: center;
+  top: 50% !important;
+  width: 48px;
+  z-index: 5;
+}
+#Banner .slick-arrow.slick-prev,
+#Banner .slick-arrow.slick-next,
+#Services .slick-arrow.slick-prev,
+#Services .slick-arrow.slick-next {
+  background-color: #fff;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+  height: 48px;
+  line-height: 100%;
+  padding-bottom: 30px !important;
+  position: absolute;
+  text-align: center;
+  top: 50% !important;
+  width: 48px;
+  z-index: 5;
+}
+
+#Banner .slick-arrow.slick-prev,
+#Banner .slick-arrow.slick-next {
+  display: none !important;
+}
+
+#Banner .slick-slider.slick-initialized {
+  padding-top: 0 !important;
+  text-align: center !important;
+  padding-top: 0 !important;
+  text-align: center !important;
+}
+
+#Services .slick-arrow.slick-prev {
+  border-radius: 30px;
+  left: -25px !important;
+}
+#Services .slick-arrow.slick-prev .slick-arrow.slick-prev {
+  border-radius: 30px;
+  left: -25px !important;
+}
+#Services .slick-arrow.slick-prev .slick-arrow.slick-prev:hover {
+  background: #fff !important;
+}
+#Services .slick-arrow.slick-prev:hover {
+  background: #fff !important;
+}
+#Services .slick-arrow.slick-next {
+  border-radius: 30px;
+  right: -25px !important;
+}
+#Services .slick-arrow.slick-next .slick-arrow.slick-next {
+  border-radius: 30px;
+  right: -25px !important;
+}
+#Services .slick-arrow.slick-next .slick-arrow.slick-next:hover {
+  background: #fff !important;
+}
+#Services .slick-arrow.slick-next:hover {
+  background: #fff !important;
+}
+#Services .slick-slider .slick-arrow.slick-next::before {
+  background: url("https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/arrows.c651879.svg") no-repeat;
+  background-size: 16px 64px;
+  background-position: bottom;
+  content: "";
+  margin-top: 16px;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+}
+#Services .slick-slider .slick-arrow.slick-next::before {
+  background: url("https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/arrows.c651879.svg") no-repeat;
+  background-size: 16px 64px;
+  background-position: bottom;
+  content: "";
+  margin-top: 16px;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+}
+#Services .slick-slider .slick-arrow.slick-prev::before {
+  background: url("https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/arrows.c651879.svg") no-repeat;
+  background-size: 16px 64px;
+  background-position: top;
+  content: "";
+  margin-top: 16px;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+}
+#Services .slick-slider .slick-arrow.slick-prev::before {
+  background: url("https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/arrows.c651879.svg") no-repeat;
+  background-size: 16px 64px;
+  background-position: top;
+  content: "";
+  margin-top: 16px;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+}
+
+#SliderCategory .slick-arrow.slick-prev,
+#SliderCategory .slick-arrow.slick-next {
+  width: 32px !important;
+  height: 32px !important;
+}
+#SliderCategory .slick-arrow.slick-prev,
+#SliderCategory .slick-arrow.slick-next {
+  width: 32px !important;
+  height: 32px !important;
+}
+#SliderCategory .slick-slider.slick-initialized {
+  position: relative;
+}
+#SliderCategory .slick-slider.slick-initialized {
+  position: relative;
+}
+#SliderCategory .slick-arrow.slick-prev {
+  position: relative;
+  border-radius: 32px;
+  left: 93% !important;
+  top: -25px !important;
+}
+#SliderCategory .slick-arrow.slick-prev .slick-arrow.slick-prev {
+  position: relative;
+  border-radius: 32px;
+  left: 93% !important;
+  top: -25px !important;
+}
+#SliderCategory .slick-arrow.slick-prev .slick-arrow.slick-prev:hover {
+  background: #fff !important;
+}
+#SliderCategory .slick-arrow.slick-prev:hover {
+  background: #fff !important;
+}
+#SliderCategory .slick-arrow.slick-next {
+  position: relative;
+  border-radius: 30px;
+  right: -0.3% !important;
+  top: -25px !important;
+}
+#SliderCategory .slick-arrow.slick-next .slick-arrow.slick-next {
+  position: relative;
+  border-radius: 30px;
+  right: -0.3% !important;
+  top: -25px !important;
+}
+#SliderCategory .slick-arrow.slick-next .slick-arrow.slick-next:hover {
+  background: #fff !important;
+}
+#SliderCategory .slick-arrow.slick-next:hover {
+  background: #fff !important;
+}
+#SliderCategory .slick-slider .slick-arrow.slick-next::before {
+  background: url("https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/arrows.c651879.svg") no-repeat;
+  background-size: 16px 64px;
+  background-position: bottom;
+  content: "";
+  margin-top: 8px;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+}
+#SliderCategory .slick-slider .slick-arrow.slick-next::before {
+  background: url("https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/arrows.c651879.svg") no-repeat;
+  background-size: 16px 64px;
+  background-position: bottom;
+  content: "";
+  margin-top: 8px;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+}
+#SliderCategory .slick-slider .slick-arrow.slick-prev::before {
+  background: url("https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/arrows.c651879.svg") no-repeat;
+  background-size: 16px 64px;
+  background-position: top;
+  content: "";
+  margin-top: 8px;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+}
+#SliderCategory .slick-slider .slick-arrow.slick-prev::before {
+  background: url("https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/arrows.c651879.svg") no-repeat;
+  background-size: 16px 64px;
+  background-position: top;
+  content: "";
+  margin-top: 8px;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+}/*# sourceMappingURL=slick.css.map */

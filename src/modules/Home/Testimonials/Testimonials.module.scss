@@ -1,0 +1,108 @@
+@import "../../../styles/breakpoints";
+@import "../../../styles/responsive";
+
+$playBtnSize: 80px;
+
+.tesSection {
+  margin-bottom: 96px;
+
+  @include responsive("small") {
+    margin-bottom: 80px;
+    padding: 24px 24px 48px;
+  }
+
+  @include responsive("smaller") {
+    margin: 0 auto 24px;
+  }
+
+  .tesLeft {
+    padding: 0;
+
+    .imgWrapper {
+      cursor: pointer;
+      position: relative;
+
+      img {
+        border-radius: 4px;
+        width: 100%;
+      }
+
+      &::after {
+        background: url("../../../../public/img/play-button.png") no-repeat;
+        background-size: $playBtnSize;
+        content: "";
+        position: absolute;
+        display: inline-block;
+        width: $playBtnSize;
+        height: $playBtnSize;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 0;
+      }
+    }
+  }
+
+  .tesRight {
+    padding: 0 48px 0 64px;
+
+    h5 {
+      color: #74767e;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 140%;
+      padding-bottom: 16px;
+
+      span {
+        border-left: 1px solid #c5c6c9;
+        margin-left: 16px;
+
+        img {
+          display: inline-block;
+          height: 36px;
+          margin-left: 12px;
+          vertical-align: middle;
+
+          @include responsive("large") {
+            margin: 0;
+          }
+
+          @include responsive("medium") {
+            display: block;
+            margin-left: -6px;
+          }
+        }
+
+        @include responsive("large") {
+          border: 0;
+          margin: 0;
+        }
+      }
+
+      @include responsive("smaller") {
+        font-size: 18px;
+      }
+    }
+
+    blockquote {
+      font-size: 30px;
+      line-height: 40px;
+      color: #003912;
+      margin: 0;
+
+      @include responsive("large") {
+        font-size: 24px;
+        line-height: 36px;
+      }
+
+      @include responsive("medium") {
+        padding-bottom: 24px;
+      }
+    }
+
+    @include responsive("medium") {
+      padding: 24px 0 0;
+      width: 100%;
+    }
+  }
+}

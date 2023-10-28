@@ -1,0 +1,233 @@
+.container {
+  margin: 10px 20px 20px 10px;
+  padding: 0px 30px 30px 30px;
+  font-size: 16px;
+  color: #222325;
+  overflow: hidden;
+
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .slideGroup {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 1px 2px 1px;
+    max-width: 270px;
+
+    .slide {
+      width: 98%;
+      box-shadow: 0.15px 0.15px 1px 1px rgba(0, 0, 0, 0.09);
+      border: 1px solid #efeff0;
+      border-radius: 12px;
+      color: #404145;
+      padding: 12px;
+
+      a {
+        color: #404145;
+        text-decoration: none;
+        transition: all 0.5s;
+
+        &:hover,
+        a:hover svg {
+          color: #1dbf73;
+        }
+
+        img {
+          height: 48px;
+          width: 48px;
+          margin-right: 12px;
+        }
+
+        span {
+          margin-right: 12px;
+          font-weight: 600;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    font-size: 15px;
+
+    h2 {
+      font-size: 23px;
+    }
+
+    .slideGroup {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      overflow: hidden;
+
+      .slide {
+        padding: 12px;
+        margin: 0 8px;
+        overflow: hidden;
+
+        a {
+          width: 100%;
+          color: #404145;
+          text-decoration: none;
+          transition: all 0.5s;
+
+          &:hover,
+          a:hover svg {
+            color: #1dbf73;
+          }
+
+          img {
+            margin-right: 12px;
+          }
+
+          span {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin: -20px 15px 15px 15px;
+    padding: 25px;
+
+    h2 {
+      font-size: 22px;
+    }
+
+    .slideGroup {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+
+      .slide {
+        padding: 12px;
+        margin: 0 8px;
+
+        a {
+          color: #404145;
+          text-decoration: none;
+          transition: all 0.5s;
+
+          &:hover,
+          a:hover svg {
+            color: #1dbf73;
+          }
+
+          img {
+            height: 35px;
+            width: 35px;
+            margin-right: 12px;
+          }
+
+          span {
+            margin-right: 12px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    margin: 0px 20px 10px 20px;
+    padding: 0px 20px 20px 20px;
+
+    h2 {
+      font-size: 21px;
+    }
+
+    .slideGroup {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+      max-width: 1000px;
+
+      .slide {
+        border: 1px solid #efeff0;
+        border-radius: 12px;
+        color: #404145;
+        padding: 12px;
+        margin: 0 8px;
+
+        a {
+          color: #404145;
+          text-decoration: none;
+          transition: all 0.5s;
+
+          &:hover,
+          a:hover svg {
+            color: #1dbf73;
+          }
+
+          span {
+            margin-right: 12px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .container {
+    margin: -20px 10px 10px 10px;
+    padding: 15px;
+
+    h2 {
+      font-size: 20px;
+    }
+
+    .slideGroup {
+      display: flex;
+      justify-content: center;
+      flex-direction: column !important;
+      margin-top: 20px;
+      padding: 0 15px;
+
+      .slide {
+        max-width: 280px;
+        border: 1px solid #efeff0;
+        border-radius: 12px;
+        color: #404145;
+        padding: 20px 30px;
+        margin: 0 8px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column !important;
+
+        a {
+          color: #404145;
+          text-decoration: none;
+          transition: all 0.5s;
+
+          &:hover,
+          a:hover svg {
+            color: #1dbf73;
+          }
+
+          img {
+            margin-right: 12px;
+          }
+
+          span {
+            margin-right: 12px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}

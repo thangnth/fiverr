@@ -1,0 +1,50 @@
+.container {
+  margin: 0px 20px 20px 20px;
+  padding: 0px;
+  font-size: 15px;
+  color: #222325;
+}
+.container h4 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 35px;
+}
+.container .card {
+  display: inline-block;
+  margin: 8px 5px;
+}
+.container .card .service {
+  color: #74767e;
+  font-weight: 500;
+  padding: 5px 10px;
+  margin: 10px 5px !important;
+  background: #efeff0;
+  border-color: #efeff0;
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 992px) {
+  .container h4 {
+    font-size: 23px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container h4 {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container h4 {
+    font-size: 21px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .container h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+}/*# sourceMappingURL=RelatedService.module.css.map */

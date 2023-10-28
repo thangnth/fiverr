@@ -1,0 +1,78 @@
+@import "../../../styles/breakpoints";
+@import "../../../styles/responsive";
+
+$iconSize: 48px;
+
+.categoriesContent {
+  margin: 0 auto 24px;
+
+  .h2Title {
+    margin-bottom: 40px;
+    padding-bottom: 24px;
+    font-size: 32px;
+    line-height: 120%;
+
+    @include responsive("middle-medium") {
+      padding-bottom: 20px;
+    }
+
+    @include responsive("smaller") {
+      font-size: 28px;
+      line-height: 130%;
+    }
+  }
+
+  .categoriesList {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      width: 20%;
+      padding: 0 10px 32px;
+      box-sizing: border-box;
+      padding-bottom: 55px;
+      text-align: center;
+
+      @include responsive("middle-medium") {
+        width: 33.33%;
+      }
+
+      @include responsive("smaller") {
+        width: 50%;
+      }
+
+      > a {
+        color: #222325;
+        display: inline-block;
+        position: relative;
+        text-align: center;
+
+        &::after {
+          content: "";
+          position: absolute;
+          right: 50%;
+          top: $iconSize - 3;
+          width: $iconSize;
+          padding: 0 0 8px;
+          transform: translateX(50%);
+          transition: all 0.2s ease-in-out;
+          border-bottom: 2px solid #c5c6c9;
+        }
+
+        &:hover {
+          &::after {
+            border-color: #1dbf73;
+            width: $iconSize * 1.7;
+          }
+        }
+
+        img {
+          display: block;
+          width: $iconSize;
+          height: $iconSize;
+          margin: 0 auto 15px;
+        }
+      }
+    }
+  }
+}

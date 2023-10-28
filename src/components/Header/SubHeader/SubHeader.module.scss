@@ -1,0 +1,132 @@
+.navLink {
+  a {
+    color: #6a6662 !important;
+    font-size: 16px;
+  }
+
+  &:hover {
+    border-bottom: 3px solid #1dbf73;
+    max-width: 190px !important;
+  }
+}
+
+.subHeader {
+  margin-top: 80px !important;
+  background-color: #fff;
+  border: 1px solid #e4e5e7;
+  -webkit-transform: rotateX(0deg);
+  transition: transform 0.2s;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 48px;
+  z-index: 10 !important;
+
+  .container {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+
+    .nhom,
+    p.none {
+      font-size: 17px;
+      font-weight: 600;
+      color: #404145;
+      padding: 15px 25px !important;
+
+      .loai {
+        font-size: 16px;
+        font-weight: 400;
+        z-index: 9999;
+
+        a {
+          display: block;
+          margin-bottom: 6px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .subHeader {
+    .container {
+      width: 500px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navLink {
+    a {
+      font-size: 15px;
+    }
+  }
+
+  .subHeader {
+    // height: 45px;
+
+    .container {
+      width: 400px;
+      display: flex;
+      justify-content: space-between;
+
+      .nhom {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .subHeader {
+    margin-top: 135px !important;
+
+    .container {
+      width: 300px;
+      display: flex;
+      justify-content: space-between;
+
+      .nhom {
+        font-weight: 600;
+        color: #404145;
+        text-align: start;
+        padding: 15px 25px;
+
+        .loai {
+          font-weight: 400;
+
+          p {
+            text-align: start;
+            margin-bottom: 6px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .navLink {
+    a {
+      font-size: 14px;
+    }
+  }
+
+  .subHeader {
+    margin-top: 135px !important;
+
+    .container {
+      width: 300px;
+      display: flex;
+      justify-content: space-between;
+
+      .nhom {
+        font-size: 14px;
+      }
+    }
+  }
+}
