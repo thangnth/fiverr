@@ -42,7 +42,7 @@ function Header() {
   return (
     <>
       <MainHeader jobCategory={jobCAT} />
-      {condition && <SubHeader jobCategory={jobCategory} />}
+      {condition && <SubHeader jobCategory={jobCAT} />}
     </>
   );
 }
