@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import styles from "./Banner.module.scss";
+import styles from "./styles.module.scss";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./slick.scss";
+import "./styles.scss";
 import { useNavigate } from "react-router-dom";
-import useWindowResize from "../../../hooks/useWindowResize";
+import useWindowResize from "hooks/useWindowResize";
 
 function Banner() {
   const navigate = useNavigate();
@@ -39,22 +39,6 @@ function Banner() {
     <div id="Banner" className={styles.background}>
       {size.width >= 992 && (
         <Slider className={styles.slider} {...settings}>
-          <div className={styles.valentina}>
-            <div className={styles.info}>
-              <div className={styles.star}>
-                <i className="fa-solid fa-star" />
-                <i className="fa-solid fa-star" />
-                <i className="fa-solid fa-star" />
-                <i className="fa-solid fa-star" />
-                <i className="fa-solid fa-star" />
-              </div>
-
-              <p>
-                Valentina, <b>AI Artist</b>
-              </p>
-            </div>
-          </div>
-
           <div className={styles.andrea}>
             <div className={styles.info}>
               <p>
