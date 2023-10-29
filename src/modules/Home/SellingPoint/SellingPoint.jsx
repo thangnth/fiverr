@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import ReactPlayer from "react-player";
 import { Modal } from "react-bootstrap";
-import styles from "./SellingPoint.module.scss";
-import "./CustomModal.scss";
+import styles from "./styles.module.scss";
+import "./styles.scss";
 
 function SellingPoint() {
   const [playVideo, setPlayVideo] = useState(false);

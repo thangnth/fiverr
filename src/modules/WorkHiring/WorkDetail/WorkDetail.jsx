@@ -12,10 +12,10 @@ import {
   alertRequireLogin,
   alertSuccess2,
 } from "helpers/sweetAlert2"
-import { apiPostComment, apiSellerComment } from "apis/commentAPI";
+import { postComment, getCommentByWorkId } from "apis/commentAPI";
 import WorkFee from "../WorkFee";
 import useWindowResize from "hooks/useWindowResize";
-import styles from "./ServiceDetail.module.scss";
+import styles from "./styles.module.scss";
 
 function WorkDetail({ info, user, MaCongViec }) {
   const navigate = useNavigate();
@@ -47,9 +47,9 @@ function WorkDetail({ info, user, MaCongViec }) {
     return stars;
   };
 
-  const getSellerComment = async () => {
+  const handleComment = async () => {
     try {
-      const data = await apiSellerComment(MaCongViec);
+      const data = await getCommentByWorkId(MaCongViec);
       setComments(data.content);
     } catch (error) {
       alertError2("Failed to get comments");
@@ -104,7 +104,7 @@ function WorkDetail({ info, user, MaCongViec }) {
         saoBinhLuan: rating || localStorage.getItem("saoBinhLuan"),
       };
       try {
-        const data = await apiPostComment(payload);
+        const data = await postComment(payload);
         if (data.statusCode === 200 || data.statusCode === 201) {
           alertSuccess2("Your comment has been posted successfully!");
           setComment("");
@@ -131,11 +131,11 @@ function WorkDetail({ info, user, MaCongViec }) {
   };
 
   useEffect(() => {
-    getSellerComment();
+    handleComment();
   }, [MaCongViec, comment]);
 
   return (
-    <div id="ServiceDetail" className={styles.container}>
+    <div id="workDetail" className={styles.container}>
       <div className={styles.serviceDetail}>
         {info?.map((item) => {
           return (

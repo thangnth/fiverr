@@ -1,0 +1,102 @@
+[
+    {
+        "name": "Marketing & advertising",
+        "value": "Marketing & advertising",
+        "number": 2131
+    },
+    {
+        "name": "Beauty & cosmetics",
+        "value": "Beauty & cosmetic",
+        "number": 1589
+    },
+    {
+        "name": "Fashion & apparel",
+        "value": "Fashion & apparel",
+        "number": 1510
+    },
+    {
+        "name": "Real estate",
+        "value": "Real estate",
+        "number": 926
+    },
+    {
+        "name": "Media & entertainment",
+        "value": "Media & entertainment",
+        "number": 888
+    },
+    {
+        "name": "Services",
+        "value": "Services",
+        "number": 861
+    },
+    {
+        "name": "Health & wellness",
+        "value": "Health & wellness",
+        "number": 828
+    },
+    {
+        "name": "Art & design",
+        "value": "Art & design",
+        "number": 826
+    },
+    {
+        "name": "Financial services & business",
+        "value": "Financial services & business",
+        "number": 798
+    },
+    {
+        "name": "Food & beverage",
+        "value": "Food & beverage",
+        "number": 790
+    },
+    {
+        "name": "Education",
+        "value": "Education",
+        "number": 759
+    },
+    {
+        "name": "Technology",
+        "value": "Technology",
+        "number": 579
+    },
+    {
+        "name": "Animals & pets",
+        "value": "Animals & pets",
+        "number": 398
+    },
+    {
+        "name": "Blockchain & cryptourrency",
+        "value": "Blockchain & cryptourrency",
+        "number": 354
+    },
+    {
+        "name": "Sports & fitness",
+        "value": "facebook",
+        "number": 350
+    },
+    {
+        "name": "Retail & wholesale",
+        "value": "facebook",
+        "number": 272
+    },
+    {
+        "name": "Construction",
+        "value": "Construction",
+        "number": 249
+    },
+    {
+        "name": "Writing & publishing",
+        "value": "Writing & publishing",
+        "number": 247
+    },
+    {
+        "name": "Photography & videography",
+        "value": "Photography & videography",
+        "number": 219
+    },
+    {
+        "name": "Agriculture",
+        "value": "Agriculture",
+        "number": 206
+    }
+]

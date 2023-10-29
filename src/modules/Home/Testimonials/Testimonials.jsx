@@ -2,11 +2,10 @@ import React, { useState } from "react";
 import ReactPlayer from "react-player";
 import { Modal } from "react-bootstrap";
 import Slider from "react-slick";
-import styles from "./Testimonials.module.scss"
-import "./CustomSlick.scss";
+import styles from "./styles.module.scss"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./CustomModal.scss";
+import "./styles.scss";
 
 
 

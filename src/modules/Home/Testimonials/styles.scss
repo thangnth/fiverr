@@ -1,6 +1,22 @@
 @import "../../../styles/breakpoints";
 @import "../../../styles/responsive";
 
+//Modal
+.modal-dialog-centered {
+  justify-content: center;
+}
+
+.modal-content {
+  max-width: 900px;
+  background-color: transparent;
+  padding: 0;
+}
+
+video {
+  border-radius: 10px;
+}
+
+// CustomS lick
 #Testimonials {
   .slick-arrow {
     background-color: #fff !important;
@@ -20,7 +36,7 @@
     }
 
     &::after {
-      background: url("../../../../public/img/arrows.c651879.svg") no-repeat;
+      background: url("../../../../public/image/arrows.svg") no-repeat;
       background-size: 16px 64px;
       content: "";
       display: inline-block;
@@ -54,3 +70,4 @@
     }
   }
 }
+

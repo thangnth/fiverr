@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Form } from "react-bootstrap";
-import styles from "./DeliveryTime.module.scss";
-import DropDownFooter from "../DropDownFooter/DropDownFooter";
+import styles from "./styles.module.scss";
+import DropDownFooter from "../DropDownFooter";
 
 function DeliveryTime() {
   const [options, setOptions] = useState([

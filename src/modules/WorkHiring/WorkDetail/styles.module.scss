@@ -1,0 +1,704 @@
+.workDetail {
+    width: 60%;
+
+    h3 {
+        font-size: 28px;
+        margin: 15px 0 20px 0;
+    }
+
+    .sellerInfo {
+        width: 100%;
+
+        .sellerBrief {
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 40px;
+                height: 40px;
+                border-radius: 100%;
+            }
+
+            span {
+                margin: 0 10px;
+            }
+
+            .name {
+                font-size: 18px;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+
+            i {
+                color: #02c2a9;
+            }
+
+            .topRated {
+                color: gold
+            }
+        }
+
+        .sellerExperience {
+            margin: 30px 0;
+            width: 100%;
+            text-align: center;
+            background-color: #f5f5f5;
+
+            img {
+                width: 70%;
+                height: auto;
+            }
+        }
+
+    }
+
+    .offer {
+        .benefit {
+            u {
+                background: #ffecd1;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .aboutSeller {
+        .extendSeller {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            max-width: 250px;
+
+            img {
+                width: 50%;
+                height: 50%;
+                border-radius: 100%;
+                margin-right: 10px;
+            }
+
+            .contactSeller {
+                width: 110px;
+
+                p {
+                    color: #02c2a9;
+                    margin: 3px 0;
+                }
+
+                em {
+                    display: block;
+                }
+
+                button {
+                    color: #e4e5e7 !important;
+                    margin-top: 10px;
+                    padding: 8px 10px !important;
+                }
+            }
+
+        }
+    }
+
+    .FAQ {
+        font-size: 16px;
+        color: #62646A;
+
+        h4 {
+            margin-top: 30px;
+            color: #404145;
+        }
+
+        a {
+            display: block;
+            font-weight: 600;
+            color: #62646A !important;
+            padding: 15px 0;
+            border-bottom: 1px solid #dadbdd;
+            position: relative;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            span {
+                padding-left: 10px;
+                position: absolute;
+                right: 10px;
+            }
+        }
+
+        .thirdFAQ {
+            border-bottom: none;
+        }
+    }
+
+    .ratingBreakdown {
+        border-bottom: 1px solid #dadbdd;
+
+        .reviewers {
+            font-weight: 600;
+            margin-bottom: 10px;
+
+            h4 {
+                margin: 10px 0;
+            }
+
+            i {
+                color: #02c2a9;
+            }
+
+            .soSao {
+                color: #02c2a9;
+                margin-left: 5px;
+            }
+        }
+
+        .rating {
+            margin-bottom: 30px;
+
+            table {
+                tbody {
+                    tr {
+                        width: 100%;
+
+                        td {
+                            border: none;
+                            text-align: left;
+                            width: 100px;
+
+                            button {
+                                color: #e4e5e7;
+                                background-color: transparent;
+                                border: 1px solid transparent;
+                                border-radius: 4px;
+                                -webkit-box-sizing: border-box;
+                                box-sizing: border-box;
+                                cursor: pointer;
+                                display: inline-block;
+                                font-weight: 600;
+                                padding: 12px 0px;
+                                position: relative;
+                                text-align: center;
+                                text-decoration: none;
+                                width: 100px;
+                            }
+
+                        }
+
+                        .topNotch {
+                            color: #02c2a9 !important;
+                        }
+
+                        .ratingBarContainer {
+                            margin: auto;
+                            padding: 10px 10px 0 6px;
+                            width: 100%;
+
+                            .ratingBarGroup {
+                                -webkit-box-align: center;
+                                -ms-flex-align: center;
+                                -webkit-align-items: center;
+                                align-items: center;
+                                display: flex;
+
+                                .ratingBar1 {
+                                    -webkit-box-flex: 1;
+                                    -ms-flex-positive: 1;
+                                    background: #02c2a9;
+                                    border-radius: 999px;
+                                    -webkit-flex-grow: 1;
+                                    flex-grow: 1;
+                                    height: 8px;
+                                    position: relative;
+
+                                    span {
+                                        width: 100%;
+                                        background: #1dbf73;
+                                        border-radius: 999px;
+                                        height: 100%;
+                                        left: 0;
+                                        position: absolute;
+                                        z-index: 1;
+                                        background-color: #02c2a9;
+                                    }
+                                }
+
+                                .ratingBar2 {
+                                    -webkit-box-flex: 1;
+                                    -ms-flex-positive: 1;
+                                    background: #e4e5e7;
+                                    border-radius: 999px;
+                                    -webkit-flex-grow: 1;
+                                    flex-grow: 1;
+                                    height: 8px;
+                                    position: relative;
+
+                                    span {
+                                        width: 100%;
+                                        border-radius: 999px;
+                                        height: 100%;
+                                        left: 0;
+                                        position: absolute;
+                                        z-index: 1;
+                                        background-color: #e4e5e7;
+                                    }
+                                }
+
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+
+        .breakdown {
+            margin-top: 20px;
+            margin-left: 20px;
+
+            h6 {
+                padding-bottom: 16px
+            }
+
+            .ratingCategory {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 10px;
+
+                .starGroup {
+                    color: #02c2a9
+                }
+            }
+        }
+    }
+
+    .sellerComment {
+        .commentGroup {
+            padding-bottom: 10px;
+            margin: 20px 0;
+            border-bottom: 1px solid #dadbdd;
+            display: flex;
+
+            .commentorAvatar {
+                max-width: 55px;
+                max-height: 35px;
+                border-radius: 100%;
+                padding: 0 10px !important;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 100%;
+
+                }
+
+                button {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 100%;
+                    padding: 0 15px !important;
+                }
+            }
+
+
+            .comment {
+                padding-left: 20px;
+
+                h6 {
+                    font-size: 17px;
+                    margin-right: 10px;
+                }
+
+                p {
+                    max-width: 374px;
+                    margin-bottom: 10px;
+                }
+
+                .saoBinhLuan {
+                    color: #02c2a9;
+                    font-weight: 550;
+                }
+
+                .helpful {
+                    font-size: 15px;
+                    font-weight: 600;
+                }
+
+                .reactGroup {
+                    margin-left: 25px;
+                    font-weight: 600;
+                    display: inline;
+
+                    span {
+                        color: orange;
+                        margin: 0 10px;
+
+                    }
+                }
+            }
+
+        }
+    }
+
+    .postComment {
+        margin-top: 40px;
+
+        .postGroup {
+            display: flex;
+            padding: 0 10px;
+
+            .avatarCommentor {
+                padding: 0 10px;
+                max-width: 70px;
+                max-height: 50px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 100%;
+                }
+            }
+
+            textarea {
+                padding: 10px
+            }
+        }
+
+        .addComment {
+            margin-top: 20px;
+
+            p {
+                margin: 10px 0 !important;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .serviceDetail {
+        width: 100%;
+
+        .sellerComment {
+            .commentGroup {
+                padding-bottom: 10px;
+                margin: 20px 0;
+                border-bottom: 1px solid #dadbdd;
+                display: flex;
+
+                .comment {
+                    padding-left: 15px;
+                }
+            }
+        }
+
+        .postComment {
+
+            .avatarCommentor {
+                max-width: 65px !important;
+                max-height: 45px !important;
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .serviceDetail {
+        width: 100%;
+
+        h3 {
+            font-size: 25px;
+        }
+
+        .sellerInfo {
+            width: 100%;
+
+            .sellerBrief {
+                font-size: 15px;
+
+                img {
+                    width: 35px;
+                    height: 35px;
+                }
+
+                span {
+                    margin: 0 8px;
+                }
+
+                .name {
+                    font-size: 16px;
+                    font-weight: 550;
+                }
+            }
+        }
+
+        .postComment {
+            margin-top: 30px;
+
+            .avatarCommentor {
+                max-width: 60px !important;
+                max-height: 40px !important;
+            }
+
+        }
+
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .serviceDetail {
+        width: 100%;
+        font-size: 15px;
+
+        h3 {
+            font-size: 23px;
+        }
+
+        .sellerInfo {
+            width: 100%;
+
+            .sellerBrief {
+                font-size: 15px;
+
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+
+                span {
+                    margin: 0px 6px;
+                }
+
+                .name {
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+
+                i {
+                    font-size: 13px;
+                }
+            }
+
+            .sellerExperience {
+                margin: 25px 0;
+
+            }
+        }
+
+        .aboutSeller {
+            .extendSeller {
+                margin-top: 20px;
+                display: flex;
+                justify-content: space-between;
+                max-width: 220px;
+
+                img {
+                    max-width: 110px;
+                    max-height: 110px;
+                }
+
+                p {
+                    margin: 3px 0;
+                }
+
+                em {
+                    display: block;
+                }
+            }
+        }
+
+        .ratingBreakdown {
+            border-bottom: 1px solid #dadbdd;
+
+            .reviewers {
+                font-weight: 600;
+                margin-bottom: 10px;
+
+                h4 {
+                    margin: 10px 0;
+                }
+
+                i {
+                    color: #02c2a9;
+                }
+
+                .soSao {
+                    color: #02c2a9;
+                    margin-left: 5px;
+                }
+            }
+
+            .rating {
+                //  display: flex;
+                margin-bottom: 30px;
+
+                table {
+                    tbody {
+                        tr {
+                            width: 100%;
+
+                            td {
+                                border: none;
+                                text-align: left;
+                                width: 100px;
+
+                                button {
+                                    color: #e4e5e7;
+                                    background-color: transparent;
+                                    border: 1px solid transparent;
+                                    border-radius: 4px;
+                                    -webkit-box-sizing: border-box;
+                                    box-sizing: border-box;
+                                    cursor: pointer;
+                                    display: inline-block;
+                                    font-weight: 600;
+                                    padding: 12px 0px;
+                                    position: relative;
+                                    text-align: center;
+                                    text-decoration: none;
+                                    width: 100px;
+                                }
+
+                            }
+
+                            .topNotch {
+                                color: #02c2a9 !important;
+                            }
+
+                            .ratingBarContainer {
+                                margin: auto;
+                                padding: 10px 10px 0 6px;
+                                width: 100%;
+
+                                .ratingBarGroup {
+                                    -webkit-box-align: center;
+                                    -ms-flex-align: center;
+                                    -webkit-align-items: center;
+                                    align-items: center;
+                                    display: flex;
+
+                                    .ratingBar1 {
+                                        -webkit-box-flex: 1;
+                                        -ms-flex-positive: 1;
+                                        background: #02c2a9;
+                                        border-radius: 999px;
+                                        -webkit-flex-grow: 1;
+                                        flex-grow: 1;
+                                        height: 8px;
+                                        position: relative;
+
+                                        span {
+                                            width: 100%;
+                                            background: #1dbf73;
+                                            border-radius: 999px;
+                                            height: 100%;
+                                            left: 0;
+                                            position: absolute;
+                                            z-index: 1;
+                                            background-color: #02c2a9;
+                                        }
+                                    }
+
+                                    .ratingBar2 {
+                                        -webkit-box-flex: 1;
+                                        -ms-flex-positive: 1;
+                                        background: #e4e5e7;
+                                        border-radius: 999px;
+                                        -webkit-flex-grow: 1;
+                                        flex-grow: 1;
+                                        height: 8px;
+                                        position: relative;
+
+                                        span {
+                                            width: 100%;
+                                            // background: #1dbf73;
+                                            border-radius: 999px;
+                                            height: 100%;
+                                            left: 0;
+                                            position: absolute;
+                                            z-index: 1;
+                                            background-color: #e4e5e7;
+                                        }
+                                    }
+
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            .breakdown {
+                h6 {
+                    padding-bottom: 16px
+                }
+            }
+        }
+
+        .postComment {
+            margin-top: 25px;
+
+            .avatarCommentor {
+                max-width: 55px !important;
+                max-height: 35px !important;
+            }
+
+            .addComment {
+                margin-top: 15px;
+
+                p {
+                    margin: 8px 0 !important;
+                }
+            }
+        }
+
+        .sellerComment {
+            .commentGroup {
+                .comment {
+                    h6 {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .serviceDetail {
+        width: 100%;
+        font-size: 14px;
+
+        h3 {
+            font-size: 20px;
+            margin: 15px 0;
+        }
+
+        .sellerInfo {
+            width: 100%;
+
+            .sellerBrief {
+                font-size: 15px;
+
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+
+                span {
+                    margin: 0px 2px;
+                }
+
+                .name {
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            }
+
+            .sellerExperience {
+                margin: 20px 0;
+
+            }
+        }
+    }
+}

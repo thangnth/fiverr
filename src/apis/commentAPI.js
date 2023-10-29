@@ -1,6 +1,6 @@
 import instance from "./instance";
 
-export const getCommentByJobId = async (MaCongViec) => {
+export const getCommentByWorkId = async (MaCongViec) => {
   const { data } = await instance.get(
     `/binh-luan/lay-binh-luan-theo-cong-viec/${MaCongViec}`
   );

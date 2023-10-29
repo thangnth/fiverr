@@ -1,0 +1,175 @@
+.serviceDropdown {
+    width: 570px;
+    height: 400px;
+    padding: 16px 24px;
+
+    .serviceContainer {}
+
+    b {
+        padding-bottom: 20px !important;
+    }
+
+    .checkBoxList {
+        display: flex;
+        justify-content: space-between;
+        align-items: center !important;
+
+        .optionBox {
+            display: flex;
+            align-items: center !important;
+            margin: 12px 0;
+            font-weight: 550;
+            color: #222325;
+        }
+
+        input {
+            width: 24px;
+            height: 24px;
+            margin-right: 5px;
+        }
+
+        label {
+            font-size: 14px;
+            max-width: 70px;
+        }
+
+        .number {
+            font-size: 14px;
+            font-weight: 500;
+            color: #62646a;
+            margin-left: 10px;
+        }
+
+        .showMore {
+            font-size: 14px;
+            color: #62646a !important;
+        }
+
+        hr {
+            border-bottom: 1px solid #efeff0 !important;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .serviceDropdown {
+        width: 400px;
+        height: 350px;
+        padding: 14px 22px;
+
+        .checkBoxList {
+            .optionBox {
+                margin: 12px 0;
+            }
+
+            input {
+                width: 20px;
+                height: 20x;
+                margin-right: 5px;
+            }
+
+            label {
+                font-size: 13px;
+                max-width: 70px;
+            }
+
+            .number {
+                font-size: 13px;
+                margin-left: 8px;
+
+            }
+
+            .showMore {
+                font-size: 14px;
+
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .serviceDropdown {
+        width: 300px;
+        height: 350px;
+        padding: 10px 20px;
+
+        .checkBoxList {
+            display: flex;
+            justify-content: space-between;
+            align-items: center !important;
+
+            .optionBox {
+                display: flex;
+                // justify-content: space-around;
+                align-items: center !important;
+                margin: 12px 0;
+                padding: 0 8px;
+                font-weight: 550;
+                color: #222325;
+            }
+
+            input {
+                width: 16px;
+                height: 16px;
+                margin-right: 5px;
+            }
+
+            label {
+                font-size: 13px;
+                max-width: 60px;
+            }
+
+            .number {
+                font-size: 13px;
+
+            }
+
+            .showMore {
+                font-size: 14px;
+                margin-left: 6px;
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .serviceDropdown {
+        width: 280px;
+        height: 300px;
+        padding: 10px 15px;
+
+        .checkBoxList {
+
+            .optionBox {
+
+                margin: 12px 0;
+                padding: 0 4px;
+                font-weight: 500;
+            }
+
+            input {
+                width: 13px;
+                height: 13px;
+                margin-right: 5px;
+            }
+
+            label {
+                font-size: 12px;
+                max-width: 55px;
+            }
+
+            .number {
+                font-size: 12px;
+
+            }
+
+            .showMore {
+                font-size: 13px;
+                margin-left: 6px;
+            }
+
+        }
+    }
+}

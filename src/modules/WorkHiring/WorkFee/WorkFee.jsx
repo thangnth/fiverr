@@ -7,8 +7,8 @@ import {
 import { useNavigate } from "react-router-dom";
 import { postWork } from "apis/workHiringAPI";
 import { Nav } from "react-bootstrap";
-import styles from "./ServiceCost.module.scss";
-import WorkHiring from "..";
+import styles from "./styles.module.scss";
+
 
 function WorkFee ({ info, user, MaCongViec }) {
   const navigate = useNavigate();

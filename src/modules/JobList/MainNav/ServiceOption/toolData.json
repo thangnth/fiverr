@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Hootsuite",
+        "value": "hootsuite",
+        "number": 1465
+    },
+    {
+        "name": "Buffer",
+        "value": "buffer",
+        "number": 1097
+    },
+    {
+        "name": "SocialPilot",
+        "value": "socialPilot",
+        "number": 598
+    },
+    {
+        "name": "HubSpot",
+        "value": "hubSpot",
+        "number": 530
+    },
+    {
+        "name": "Zoho Social",
+        "value": "zohosocial",
+        "number": 1465
+    },
+    {
+        "name": "Later",
+        "value": "later",
+        "number": 1097
+    },
+    {
+        "name": "Other",
+        "value": "other",
+        "number": 171
+    },
+    {
+        "name": "Sprout Social",
+        "value": "sproutsocial",
+        "number": 136
+    },
+    {
+        "name": "MeetEdgar",
+        "value": "meetedgar",
+        "number": 39
+    },
+    {
+        "name": "Falcon.io",
+        "value": "falcon.io",
+        "number": 38
+    },
+    {
+        "name": "CoSchedule",
+        "value": "coschedule",
+        "number": 36
+    },
+    {
+        "name": "Oktopost",
+        "value": "oktopost",
+        "number": 28
+    },
+    {
+        "name": "Agorapulse",
+        "value": "agorapulse",
+        "number": 21
+    },
+    {
+        "name": "Eclincher",
+        "value": "eclincher",
+        "number": 20
+    }
+]

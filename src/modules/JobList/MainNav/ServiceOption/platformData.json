@@ -1,0 +1,77 @@
+[
+    {
+        "name": "Instagram",
+        "value": "instagram",
+        "number": 11577
+    },
+    {
+        "name": "Facebook",
+        "value": "facebook",
+        "number": 11439
+    },
+    {
+        "name": "LinkedIn",
+        "value": "linkedin",
+        "number": 4116
+    },
+    {
+        "name": "Pinterest",
+        "value": "pinterest",
+        "number": 2712
+    },
+    {
+        "name": "TikTok",
+        "value": "tiktok",
+        "number": 2487
+    },
+    {
+        "name": "Twitter",
+        "value": "twitter",
+        "number": 2454
+    },
+    {
+        "name": "YouTube",
+        "value": "youtube",
+        "number": 2295
+    },
+    {
+        "name": "Other",
+        "value": "other",
+        "number": 160
+    },
+    {
+        "name": "Discord",
+        "value": "discord",
+        "number": 113
+    },
+    {
+        "name": "Snapchat",
+        "value": "snapchat",
+        "number": 112
+    },
+    {
+        "name": "Reddit",
+        "value": "reddit",
+        "number": 73
+    },
+    {
+        "name": "Twitch",
+        "value": "twitch",
+        "number": 71
+    },
+    {
+        "name": "Product Hunt",
+        "value": "producthunt",
+        "number": 29
+    },
+    {
+        "name": "Tumblr",
+        "value": "tumblr",
+        "number": 16
+    },
+    {
+        "name": "Clubhouse",
+        "value": "clubhouse",
+        "number": 1
+    }
+]

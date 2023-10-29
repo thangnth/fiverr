@@ -1,6 +1,6 @@
 import React from "react";
 import { Nav, NavDropdown } from "react-bootstrap";
-import ServiceOption from "./ServiceOption/ServiceOption";
+import ServiceOption from "./ServiceOption/ServiceOption.jsx";
 import SellerDetail from "./SellerDetail/SellerDetail";
 import Budget from "./Budget";
 import DeliveryTime from "./DeliveryTime";

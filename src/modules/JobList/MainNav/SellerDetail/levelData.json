@@ -1,0 +1,57 @@
+[
+    {
+        "name": "Hootsuite",
+        "value": "hootsuite",
+        "number": 1465
+    },
+    {
+        "name": "Buffer",
+        "value": "buffer",
+        "number": 1097
+    },
+    {
+        "name": "SocialPilot",
+        "value": "socialPilot",
+        "number": 598
+    },
+    {
+        "name": "HubSpot",
+        "value": "hubSpot",
+        "number": 530
+    },
+    {
+        "name": "Zoho Social",
+        "value": "zohosocial",
+        "number": 1465
+    },
+    {
+        "name": "Later",
+        "value": "later",
+        "number": 1097
+    },
+    {
+        "name": "Other",
+        "value": "other",
+        "number": 171
+    },
+    {
+        "name": "Top Rated Seller",
+        "value": "Top Rated Seller",
+        "number": 210
+    },
+    {
+        "name": "Level 2",
+        "value": "Level 2",
+        "number": 246
+    },
+    {
+        "name": "Level 1",
+        "value": "Level 1",
+        "number": 193
+    },
+    {
+        "name": "New Seller",
+        "value": "New Seller",
+        "number": 297
+    }
+]
