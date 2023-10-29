@@ -1,0 +1,52 @@
+.deliveryDropdown {
+    width: 238px;
+    height: 200px !important;
+    padding: 16px 24px;
+    font-weight: 600;
+
+    .deliveryContainer {
+        height: 283px;
+    }
+}
+
+.deliveryPoll {
+    width: 100%;
+    height: 230px;
+
+    label {
+        height: 19px;
+    }
+
+    input {
+        width: 19px;
+        height: 19px;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .deliveryDropdown {
+        width: 230x;
+        height: 220px !important;
+        padding: 8px 20px;
+        font-size: 14px;
+
+        .deliveryContainer {
+            height: 260px;
+        }
+    }
+
+    .deliveryPoll {
+        width: 100%;
+        height: 230px;
+
+        label {
+            height: 19px;
+        }
+
+        input {
+            width: 16px;
+            height: 16px;
+        }
+    }
+}

@@ -5,8 +5,8 @@ import Pagination from "react-paginate";
 import {getPagination} from "apis/jobAPI";
 import "./styles.scss";
 import styles from "./styles.module.scss";
-import MainNav from "./MainNav/MainNav";
-import SwitchNav from "./SwitchNav/SwitchNav";
+import MainNav from "./MainNav";
+import SwitchNav from "./SwitchNav";
 import { alertError } from "helpers/sweetAlert2"
 
 function JobList() {
