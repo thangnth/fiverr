@@ -17,7 +17,7 @@ import {
   alertSuccess,
   warningLogout,
 } from "helpers/sweetAlert2";
-import {logOut} from "slices/userSlice"
+import {logout} from "slices/userSlice"
 
 function MainHeader({ jobCAT }) {
   const { user } = useSelector((state) => state?.user);
@@ -40,7 +40,7 @@ function MainHeader({ jobCAT }) {
     warningLogout()
       .then((result) => {
         if (result.isConfirmed) {
-          dispatch(logOut());
+          dispatch(logout());
           localStorage.removeItem("user");
           sessionStorage.removeItem("user");
           alertSuccess("Logged out successfully");
